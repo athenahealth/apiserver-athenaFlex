@@ -15,23 +15,23 @@ Collaboration community is for Centricity™ Practice Solution and Centricity EM
   contact: centricity.partner@ge.com
 
 GE Customer Support will also be able to provide, via responses to API support forum posts:
-•Information about where to access GE FHIR documentation
+- Information about where to access GE FHIR documentation
 
-•General information about the content available on the GE FHIR API site
+- General information about the content available on the GE FHIR API site
 
-•General information about the content of the GE FHIR Resource & Authorization.PDF guide
+- General information about the content of the GE FHIR Resource & Authorization.PDF guide
 
-•General information about the registration, SSO signup and access token processes
+- General information about the registration, SSO signup and access token processes
 
-•General information about the Centricity Partner Program
+- General information about the Centricity Partner Program
 
-•General information about paid Services Offerings related to the GE FHIR API’s 
+- General information about paid Services Offerings related to the GE FHIR API’s 
 
 GE Customer Support is not able to provide support for:
-•Code level questions- technical, syntax, API resource technical details
+- Code level questions- technical, syntax, API resource technical details
 
-•Code reviews
+- Code reviews
 
-•Postman or other dev environment related issues
+- Postman or other dev environment related issues
 
-•Azure application, configuration or technical questions
+- Azure application, configuration or technical questions
