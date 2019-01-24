@@ -35,3 +35,5 @@ GE Customer Support is not able to provide support for:
 - Postman or other dev environment related issues
 
 - Azure application, configuration or technical questions
+
+Sample token generation code is present in token-generation-sample-code folder

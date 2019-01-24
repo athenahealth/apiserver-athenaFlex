@@ -1,0 +1,133 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+    <script src="./config.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <br>
+        <br>
+
+        <div id="step4" class="alert alert-info" style="display:none;" role="alert">
+            Getting Token.
+        </div>
+        <div id="step5" class="alert alert-info" style="display:none;overflow-wrap: break-word;" role="alert">
+            Token recieved and getting patient bundle.
+            <div id="tokenDiv" class="alert alert-success" style="display:none;" role="alert">
+                   
+                </div>
+        </div>
+
+        <div id="patient-data">
+        </div>
+
+    </div>
+    <script>
+          /*  STEP 4 : Fetch token
+            Description:
+            a.In this request, Client Id and Client secret is needed for generating token.
+            b.Create base64 encoded string of client ID and client secret which will be used as 'Authorization' header.
+
+            Note: Client secret needs to be protected always. For demo we have kept
+            this in the UI code itself but usually this is kept at the backend server code or config 
+            file and not in client side js code. 
+            */
+            let Authorization = 'Basic ' + btoa(config.clientID + ':' + config.clientSecret);
+            // Following is the code, state and id_token recieved after STEP 3 from FHIR server after POST request on redirect URL by the FHIR server.
+            let code = "<%= code %>";
+            //<%= %> this is syntax of nodejs for sending variables from nodejs to html file.
+            let state = "<%= state %>";
+    
+            let id_token = "<%= id_token %>";
+            // creating form-urlencoded string of all required values for token generation.
+            let data = 'code=' + code + '&redirect_uri=' + config.redirect_url + '&grant_type=authorization_code&client_id=' + config.clientID + '&state='+state;
+    
+            stepInProgress('step4');
+            // below is the token generation URL recieved in the metadata of FHIR server.
+            // along with url encoded data.
+            postAjaxCall('https://apisandbox.gehealthcare.com:9443/demoAPIServer/oauth2/token', data).then((token) => {
+                let tokenRes = JSON.parse(token);
+                stepInProgress('step5');
+                stepInProgress('tokenDiv');
+                document.getElementById('tokenDiv').append(tokenRes.access_token);
+            /*  STEP 5 : Using the token to get patient data
+                Description : 
+                Below step gets the patient data using the generated token.
+            */
+                getAjaxCall(config.fhir_base_url+'/Patient?_format=json', tokenRes.access_token).then((patients) => {
+                    document.getElementById('patient-data').append(patients);
+                });
+            });
+       /*   This function sends a simple GET request. Important thing here is that the 
+            function also adds a Authorization header with value as the generated token
+            to the GET request.
+            */  
+            function getAjaxCall(url, token) {
+                // return a new promise. 
+                return new Promise(function (resolve, reject) {
+                    // do the usual XHR stuff 
+                    var req = new XMLHttpRequest();
+                    req.open('get', url);
+                    // Adding authorization header with the value as Bearer token
+                    req.setRequestHeader('Authorization', 'Bearer ' + token);
+                    //NOW WE TELL THE SERVER WHAT FORMAT OF POST REQUEST WE ARE MAKING 
+                    req.onload = function () {
+                        if (req.status == 200) {
+                            resolve(req.response);
+                        } else {
+                            reject(Error(req.statusText));
+                        }
+                    };
+                    // handle network errors 
+                    req.onerror = function () {
+                        reject(Error("Network Error"));
+                    }; // make the request 
+                    req.send();
+                });
+            };
+            
+        /*  This function sends a simple POST request. Important thing here is that the 
+            function adds a Authorization header with value as the base64 string generated
+            in line number 36 of this page. It also adds a header content type with value 
+            application/x-www-form-urlencoded */  
+            function postAjaxCall(url, data) {
+                // return a new promise. 
+                return new Promise(function (resolve, reject) {
+                    // do the usual XHR stuff 
+                    var req = new XMLHttpRequest();
+    
+                    req.open('post', url);
+                    //NOW WE TELL THE SERVER WHAT FORMAT OF POST REQUEST WE ARE MAKING 
+                    // adds a Authorization header with value as the base64 string generated in line number 36
+                    req.setRequestHeader('Authorization', Authorization);
+                    // adds a header content type with value application/x-www-form-urlencoded
+                    req.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+                    req.onload = function () {
+                        if (req.status == 200) {
+                            setTimeout(function () {
+                                resolve(req.response);
+                            }, 2000)
+    
+                        } else {
+                            reject(Error(req.statusText));
+                        }
+                    };
+                    // handle network errors 
+                    req.onerror = function () {
+                        reject(Error("Network Error"));
+                    }; // make the request 
+                    req.send(data);
+                });
+            };
+            // function to show currently executing step in browser.
+            function stepInProgress( step ) {
+                document.getElementById(step).style.display = 'block';
+            }
+        </script>
+   
+</body>
+
+</html>
