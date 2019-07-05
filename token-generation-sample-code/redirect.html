@@ -48,7 +48,7 @@
             stepInProgress('step4');
             // below is the token generation URL recieved in the metadata of FHIR server.
             // along with url encoded data.
-            postAjaxCall('https://apisandbox.gehealthcare.com:9443/demoAPIServer/oauth2/token', data).then((token) => {
+            postAjaxCall(config.fhir_base_url.substring(0,config.fhir_base_url.lastIndexOf("/fhir"))+'/oauth2/token', data).then((token) => {
                 let tokenRes = JSON.parse(token);
                 stepInProgress('step5');
                 stepInProgress('tokenDiv');
