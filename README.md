@@ -1,8 +1,13 @@
+# Notification: Dev Portal Maintenance Downtime window – Monday Oct 5th 9AM -1 PM PST
+    Time: “Monday Oct 5th 9AM -1 PM PST”
+    Impact: Users will not be able to access Dev Portal during the downtime.
+    Developer Portal: https://mydata.athenahealth.com/home
+
+
 # apiserver.athenahealth.com
+Welcome to the athenaPractice and athenaFlow FHIR API Developer Support Wiki.
 
-Welcome to the CPS and CEMR FHIR API Developer Support Wiki.
-
-Collaboration community is for CPS and CEMR FHIR API Developer Support. 
+Collaboration community is for athenaPractice and athenaFlow FHIR API Developer Support. 
 > Peer-to-peer support forum where developers can post questions and get help from other CPS and CEMR FHIR developers. 
 
 * CPS and CEMR FHIR API Site: https://mydata.athenahealth.com/home
@@ -13,7 +18,7 @@ Collaboration community is for CPS and CEMR FHIR API Developer Support.
   * https://mydata.athenahealth.com/fhirapidoc
   * https://smartappdocsprod.azureedge.net/ge/ge.html
 
-- Partner Program: https://virencehealth.com/partners
+- Partner Program: https://www.athenahealth.com/solutions/partner-program
 
 Customer Support will also be able to provide, via responses to API support forum posts:
 - Information about where to access FHIR documentation
