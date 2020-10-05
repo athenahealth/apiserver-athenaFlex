@@ -1,9 +1,3 @@
-# Notification: Dev Portal Maintenance Downtime window – Monday Oct 5th 9AM -1 PM PST
-    Time: “Monday Oct 5th 9AM -1 PM PST”
-    Impact: Users will not be able to access Dev Portal during the downtime.
-    Developer Portal: https://mydata.athenahealth.com/home
-
-
 # apiserver.athenahealth.com
 Welcome to the athenaPractice and athenaFlow FHIR API Developer Support Wiki.
 
