@@ -10,7 +10,7 @@ Collaboration community is for athenaPractice and athenaFlow FHIR API Developer 
 
 * API Documentation:
   * https://mydata.athenahealth.com/fhirapidoc
-  * https://smartappdocsprod.azureedge.net/ge/ge.html
+  * https://docs.mydata.athenahealth.com/index.html
 
 - Partner Program: https://www.athenahealth.com/solutions/partner-program
 
