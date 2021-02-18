@@ -12,8 +12,6 @@ Collaboration community is for athenaPractice and athenaFlow FHIR API Developer 
   * https://mydata.athenahealth.com/fhirapidoc
   * https://docs.mydata.athenahealth.com/index.html
 
-- Partner Program: https://www.athenahealth.com/solutions/partner-program
-
 Customer Support will also be able to provide, via responses to API support forum posts:
 - Information about where to access FHIR documentation
 
