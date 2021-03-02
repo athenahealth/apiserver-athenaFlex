@@ -1,10 +1,18 @@
-# apiserver.athenahealth.com
-Welcome to the athenaPractice and athenaFlow FHIR API Developer Support Wiki.
+# athenaFlex FHIR API Support Forum
+Welcome to the athenaPractice and athenaFlow FHIR API Developer Support Forum.
 
-Collaboration community is for athenaPractice and athenaFlow FHIR API Developer Support. 
+# NOTICE OF HOST NAME CHANGE
+The security certificate for the FHIR API sandbox must be renewed.
+
+The host name will be changed from what is published at https://mydata.athenahealth.com/access-the-apis.
+* OLD: https://cpsapisandbox.virenceaz.com:9443/demoAPIServer
+* NEW: https://cpsapisandbox.fhirapi.athenahealth.com/demoAPIServer
+
+
+Collaboration community is for athenaPractice and athenaFlow FHIR API Developer Support.
 > Peer-to-peer support forum where developers can post questions and get help from other CPS and CEMR FHIR developers. 
 
-* CPS and CEMR FHIR API Site: https://mydata.athenahealth.com/home
+* athenaPractice and athenaFlow FHIR API Site: https://mydata.athenahealth.com/home
 
 * HL7 FHIR Information: https://www.hl7.org/fhir/overview-dev.html
 
@@ -21,9 +29,7 @@ Customer Support will also be able to provide, via responses to API support foru
 
 - General information about the registration, SSO signup and access token processes
 
-- General information about the Partner Program
-
-- General information about paid Services Offerings related to the GE FHIR API’s 
+- General information about paid Services Offerings related to the athenaFlex FHIR APIs 
 
 Customer Support is _not_ able to provide support for the following; this can come from only developer collaboration:
 - Code level questions - technical, syntax, API resource technical details
