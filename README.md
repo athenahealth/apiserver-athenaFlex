@@ -2,12 +2,13 @@
 Welcome to the athenaPractice and athenaFlow FHIR API Developer Support Forum.
 
 # NOTICE OF HOST NAME CHANGE
-The security certificate for the FHIR API sandbox must be renewed.
 
-The host name will be changed from what is published at https://mydata.athenahealth.com/access-the-apis.
+The host name of the CPS 12.3.4 API Sandbox FHIR Server has been changed from what is published at https://mydata.athenahealth.com/access-the-apis.
 * OLD: https://cpsapisandbox.virenceaz.com:9443/demoAPIServer
-* NEW: https://cpsapisandbox.fhirapi.athenahealth.com/demoAPIServer
+* NEW: https://cpsapisandbox.fhirapi.athenahealth.com/demoAPIServer - fhirapi.athenahealth replaces virenceaz and the port number is removed.
 
+We also have athenaPractice V20 API Sandbox FHIR Server.
+* https://apsandbox.fhirapi.athenahealth.com/demoAPIServer
 
 Collaboration community is for athenaPractice and athenaFlow FHIR API Developer Support.
 > Peer-to-peer support forum where developers can post questions and get help from other CPS and CEMR FHIR developers. 
