@@ -1,7 +1,13 @@
 # athenaFlex FHIR API Support Forum
 Welcome to the athenaPractice and athenaFlow FHIR API Developer Support Forum.
 
-# NOTICE OF HOST NAME CHANGE
+# Notice of Forum URL Change
+
+The host name of this forum has been changed.
+* OLD: https://github.com/virencehealth/apiserver.virencehealth.com - will automatically redirect to the new URL
+* NEW: https://github.com/athenahealth/apiserver.athenaFlex.com
+
+# Notice of Host Name Change
 
 The host name of the CPS 12.3.4 API Sandbox FHIR Server has been changed from what is published at https://mydata.athenahealth.com/access-the-apis.
 * OLD: https://cpsapisandbox.virenceaz.com:9443/demoAPIServer
