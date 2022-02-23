@@ -1,6 +1,13 @@
 # athenaFlex FHIR API Support Forum
 Welcome to the athenaPractice and athenaFlow FHIR API Developer Support Forum.
 
+# Notice of Sample Patient Login Credentials Change
+
+The password for the sample patient login for API Sandbox FHIR Servers has been changed.
+* The email address is unchanged: athenainterop@aol.com.  Only the password has changed.
+* OLD: Virence@123
+* NEW: TestPatient!@
+
 # Notice of Forum URL Change
 
 The host name of this forum has been changed.
