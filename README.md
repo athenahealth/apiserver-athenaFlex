@@ -3,13 +3,21 @@ Welcome to the athenaPractice and athenaFlow FHIR API Developer Support Forum.
 
 # API Sandbox FHIR Servers
 
-* athenaFlow V22
-  * FHIR R4: https://af22sandbox.fhirapi.athenahealth.com/demo22a-tutAPIServer/fhir/r4
-  * FHIR DSTU2: https://af22sandbox.fhirapi.athenahealth.com/demo22a-tutAPIServer/fhir
+* athenaPractice V23
+  * FHIR R4: https://ap23sandbox.fhirapi.athenahealth.com/demoAPIServer/fhir/r4
+  * FHIR DSTU2: https://ap23sandbox.fhirapi.athenahealth.com/demoAPIServer/fhir
+
+* athenaFlow V23
+  * FHIR R4: https://af23sandbox.fhirapi.athenahealth.com/demo-tutAPIServer/fhir/r4
+  * FHIR DSTU2: https://af23sandbox.fhirapi.athenahealth.com/demo-tutAPIServer/fhir
 
 * athenaPractice V22
   * FHIR R4: https://ap22sandbox.fhirapi.athenahealth.com/demoAPIServer/fhir/r4
   * FHIR DSTU2: https://ap22sandbox.fhirapi.athenahealth.com/demoAPIServer/fhir
+
+* athenaFlow V22
+  * FHIR R4: https://af22sandbox.fhirapi.athenahealth.com/demo22a-tutAPIServer/fhir/r4
+  * FHIR DSTU2: https://af22sandbox.fhirapi.athenahealth.com/demo22a-tutAPIServer/fhir
 
 * athenaPractice V20
   * FHIR DSTU2: https://apsandbox.fhirapi.athenahealth.com/demoAPIServer/fhir
@@ -19,10 +27,10 @@ This collaboration community is for athenaPractice and athenaFlow FHIR API devel
 
 * athenaPractice and athenaFlow FHIR API Site: https://mydata.athenahealth.com/home
 
-* HL7 FHIR Information: https://www.hl7.org/fhir/overview-dev.html
+* HL7 FHIR Release 4 Information: https://www.hl7.org/fhir/R4/overview-dev.html
 
 * API Documentation:
-  * https://mydata.athenahealth.com/fhirapidoc
+  * https://mydata.athenahealth.com/fhirapidoc/r4
 
 Customer Support will also be able to provide, via responses to API support forum posts:
 - Where to access FHIR documentation
